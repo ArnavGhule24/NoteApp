@@ -1,4 +1,4 @@
-package com.techmania.noteapp.Adapters
+package com.example.noteapp.Adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.techmania.noteapp.Model.Note
-import com.techmania.noteapp.R
-import com.techmania.noteapp.View.MainActivity
-import com.techmania.noteapp.View.UpdateActivity
+import com.example.noteapp.Model.Note
+import com.example.noteapp.R
+import com.example.noteapp.View.MainActivity
+import com.example.noteapp.View.UpdateActivity
 
 class NoteAdapter(private val activity : MainActivity) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
@@ -58,7 +58,7 @@ class NoteAdapter(private val activity : MainActivity) : RecyclerView.Adapter<No
         return notes.size
 
     }
-
+    //function to observe changes in LiveData and update the list
     fun setNote(myNotes : List<Note>){
         this.notes = myNotes
         notifyDataSetChanged()

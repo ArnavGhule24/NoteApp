@@ -1,8 +1,8 @@
-package com.techmania.noteapp
+package com.example.noteapp
 
 import android.app.Application
-import com.techmania.noteapp.Repository.NoteRepository
-import com.techmania.noteapp.Room.NoteDatabase
+import com.example.noteapp.Repository.NoteRepository
+import com.example.noteapp.Room.NoteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 

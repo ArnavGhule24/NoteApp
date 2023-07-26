@@ -1,8 +1,8 @@
-package com.techmania.noteapp.ViewModel
+package com.example.noteapp.ViewModel
 
 import androidx.lifecycle.*
-import com.techmania.noteapp.Model.Note
-import com.techmania.noteapp.Repository.NoteRepository
+import com.example.noteapp.Model.Note
+import com.example.noteapp.Repository.NoteRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.lang.IllegalArgumentException

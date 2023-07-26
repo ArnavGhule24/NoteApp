@@ -1,4 +1,4 @@
-package com.techmania.noteapp.View
+package com.example.noteapp.View
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -16,12 +15,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.techmania.noteapp.Adapters.NoteAdapter
-import com.techmania.noteapp.Model.Note
-import com.techmania.noteapp.NoteApplication
-import com.techmania.noteapp.R
-import com.techmania.noteapp.ViewModel.NoteViewModel
-import com.techmania.noteapp.ViewModel.NoteViewModelFactory
+import com.example.noteapp.Adapters.NoteAdapter
+import com.example.noteapp.Model.Note
+import com.example.noteapp.NoteApplication
+import com.example.noteapp.R
+import com.example.noteapp.ViewModel.NoteViewModel
+import com.example.noteapp.ViewModel.NoteViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // assign adapter class to recycler view
         val recyclerView : RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         val noteAdapter = NoteAdapter(this)
@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         noteViewModel = ViewModelProvider(this,viewModelFactory).get(NoteViewModel::class.java)
 
+        //observe changes in data set
         noteViewModel.myAllNotes.observe(this, Observer { notes ->
 
             //update UI

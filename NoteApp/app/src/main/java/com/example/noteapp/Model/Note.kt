@@ -1,7 +1,8 @@
-package com.techmania.noteapp.Model
+package com.example.noteapp.Model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+
 
 @Entity(tableName = "note_table")
 class Note(val title : String,val description : String) {

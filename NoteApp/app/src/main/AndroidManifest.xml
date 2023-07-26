@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.techmania.noteapp">
+    package="com.example.noteapp">
 
     <application
-        android:name=".NoteApplication"
+        android:name="com.example.noteapp.NoteApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,14 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
-            android:name=".View.UpdateActivity"
+            android:name="com.example.noteapp.View.UpdateActivity"
             android:exported="false" />
         <activity
-            android:name=".View.NoteAddActivity"
+            android:name="com.example.noteapp.View.NoteAddActivity"
             android:exported="false"
-            android:parentActivityName=".View.MainActivity" />
+            android:parentActivityName="com.example.noteapp.View.MainActivity" />
         <activity
-            android:name=".View.MainActivity"
+            android:name="com.example.noteapp.View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

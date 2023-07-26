@@ -1,8 +1,8 @@
-package com.techmania.noteapp.Repository
+package com.example.noteapp.Repository
 
 import androidx.annotation.WorkerThread
-import com.techmania.noteapp.Model.Note
-import com.techmania.noteapp.Room.NoteDAO
+import com.example.noteapp.Model.Note
+import com.example.noteapp.Room.NoteDAO
 import kotlinx.coroutines.flow.Flow
 
 class NoteRepository(private val noteDao : NoteDAO) {

@@ -1,7 +1,7 @@
-package com.techmania.noteapp.Room
+package com.example.noteapp.Room
 
 import androidx.room.*
-import com.techmania.noteapp.Model.Note
+import com.example.noteapp.Model.Note
 import kotlinx.coroutines.flow.Flow
 
 @Dao
